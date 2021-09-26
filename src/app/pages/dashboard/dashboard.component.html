@@ -31,7 +31,7 @@
   <div class="ion-padding-vertical"></div>
 
   <ion-card-title class="ion-padding-horizontal">Activités récentes</ion-card-title>
-  <ion-card href="javascript:void(0)">
+  <ion-card href="javascript:void(0)" (click)="presentModalActivity()">
     <ion-card-content>
       <ion-card-subtitle color="warning">Voir les statistiques de l'application</ion-card-subtitle>
       Mes données statistiques des visites, des fichiers ect...
@@ -52,6 +52,11 @@
     <ion-card-content>
       <ion-card-subtitle color="primary">Voir tout mes contacts</ion-card-subtitle>
       Tout les entreprises qui m'ont contactés ou avec lesquelles j'ai travaillé.
+    </ion-card-content>
+  </ion-card>
+  <ion-card href="javascript:void(0)" color="primary" (click)="presentModalContact()">
+    <ion-card-content>
+      <ion-card-subtitle color="primary">Ajouter un contact</ion-card-subtitle>
     </ion-card-content>
   </ion-card>
 
